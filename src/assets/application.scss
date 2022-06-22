@@ -1,0 +1,81 @@
+@import "~bulma";
+
+.pointer {
+  cursor: pointer;
+}
+
+.my-bar {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+.flash-message-text {
+  margin-top: 2.5rem;
+}
+
+.page-button {
+  background: #00d1b2;
+}
+
+.nav-button,
+.nav-button:hover {
+  border: none;
+  color: white;
+}
+
+.page-number {
+  color: black;
+  border: none;
+  cursor: default;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  animation: animation_open 1s;
+}
+
+@keyframes animation_open {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+
+  &-image {
+    border-radius: 0.25rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .my-bar {
+    flex-wrap: nowrap;
+
+    a {
+      width: 20%;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+/* Escritorio */
+@media screen and (min-width: 1400px) {
+  .my-bar {
+    a {
+      width: 10%;
+    }
+  }
+}
